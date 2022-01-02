@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<section>
+  <div class="circle"></div>
+  <header>
+    <a href="#"><img src="logo.png" class="logo" alt=""></a>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">What's New</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </header>
+  <div class="content">
+    <div class="textBox">
+      <h2>It's not just coffee<br>It's <span> Starbucks</span></h2>
+      <p>Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington.Delicious, handcrafted beverages and great-tasting food. The secret to making life better. </p>
+      <a href="#">Learn More</a>
+    </div>
+  <div class="imgBox">
+    <img src="img1.png" class="starbucks" alt="">
+  </div>
+  </div>
+  <ul class="thumb">
+    <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+    <li><img src="thumb2.png" onclick="imgSlider('img2.png'); changeCircleColor('#eb7499')"></li>
+    <li><img src="thumb3.png" onclick="imgSlider('img3.png'); changeCircleColor('#d752b1')"></li>
+  </ul>
+  <ul class="sci">
+    <li><a href="https:/facebook.com" target="_blank"><img src="facebook (1).png" alt=""></a></li>
+      <li><a href="https:/instagram.com"><img src="instagram (1).png" alt=""></a></li>
+        <li><a href="https:/twitter.com"><img src="twitter.png" alt=""></a></li>
+  </ul>
+</section>
+<script type="text/javascript">
+  function imgSlider(anything) {
+    document.querySelector('.starbucks').src=anything;
+  }
+  function changeCircleColor(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background =color;
+  }
+</script>
+  </body>
+</html>
